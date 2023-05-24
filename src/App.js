@@ -1,10 +1,11 @@
 import "./App.css";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
       <h1>React App</h1>
-      <p>just to check......</p>
+      <Layout />
     </div>
   );
 }
