@@ -51,7 +51,7 @@ export default function Contact() {
     <section className="contact">
       <div className="container">
         <div className="card">
-          <h2 className="card-header">Kontakt meg</h2>
+          <h2 className="card-header">Kontakt meg nå!</h2>
           <div className="card-content">
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
