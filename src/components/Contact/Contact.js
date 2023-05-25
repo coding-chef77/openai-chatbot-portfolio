@@ -48,58 +48,57 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact">
-      <div className="container">
-        <div className="card">
-          <h2 className="card-header">Kontakt meg nå!</h2>
-          <div className="card-content">
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <input
-                placeholder="Navn"
-                {...register("from_name")}
-                className={errors.from_name ? "error" : ""}
-              />
-              {errors.from_name && <p>Navn er nødvendig</p>}
-              <input
-                placeholder="Emne"
-                {...register("subject")}
-                className={errors.subject ? "error" : ""}
-              />
-              {errors.subject && <p>Emne er nødvendig</p>}
-              <textarea
-                placeholder="Melding"
-                {...register("message")}
-                className={errors.message ? "error" : ""}
-              />
-              {errors.message && <p>Message is required</p>}
-              <input
-                placeholder="Epost-adresse"
-                {...register("reply_to")}
-                className={errors.reply_to ? "error" : ""}
-              />
-              {errors.reply_to && (
-                <p>Vennligst skriv inn en gyldig e-postadresse</p>
-              )}
-              <button type="submit" disabled={loading}>
-                {loading ? "Sender..." : "Send"}
-              </button>
-              {message && (
-                <div className="message">
-                  <span
-                    className={
-                      message === "Takk for at du tar kontakt!"
-                        ? "success"
-                        : "error"
-                    }
-                  >
-                    {message}
-                  </span>
-                </div>
-              )}
-            </form>
-          </div>
-        </div>
+    <section className="contact-section">
+    <div>
+      <h2>Kontakt meg</h2>
+      <div>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <input
+            placeholder="Navn"
+            {...register("from_name")}
+            className={errors.from_name ? "input-error" : ""}
+          />
+          {errors.from_name && <p>Navn er påkrevd</p>}
+          <input
+            placeholder="Emne"
+            {...register("subject")}
+            className={errors.subject ? "input-error" : ""}
+          />
+          {errors.subject && <p>Emne er påkrevd</p>}
+          <textarea
+            placeholder="Melding"
+            {...register("message")}
+            className={errors.message ? "input-error" : ""}
+          />
+          {errors.message && <p>Melding er påkrevd</p>}
+          <input
+            placeholder="Epost-adresse"
+            {...register("reply_to")}
+            className={errors.reply_to ? "input-error" : ""}
+          />
+          {errors.reply_to && (
+            <p>Vennligst skriv inn en gyldig e-postadresse</p>
+          )}
+          <button type="submit" disabled={loading}>
+            {loading ? "Sender..." : "Send"}
+          </button>
+          {message && (
+            <div className="message">
+              <span
+                className={
+                  message === "Takk for at du tar kontakt!"
+                    ? "success"
+                    : "error"
+                }
+              >
+                {message}
+              </span>
+            </div>
+          )}
+        </form>
       </div>
-    </section>
+    </div>
+</section>
+
   );
 }

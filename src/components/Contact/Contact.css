@@ -1,77 +1,61 @@
-Container Styling #contact {
-  padding: 20px 0;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Card Styling*/
-.card {
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.card-header {
+.contact-section {
+  box-shadow: 0 2px 3px 0 hsla(0, 0%, 0%, 0.1);
+  border-radius: 10px;
   padding: 20px;
-
-  border-bottom: 1px solid #e5e5e5;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
-.card-content {
-  padding: 20px;
-}
-
-/* Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form input,
-form textarea {
+.contact-section h2 {
+  font-size: 1.5em;
+  margin-top: 0;
   margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
 }
 
-form button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: white;
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: 2px solid #f27735;
+}
+
+.contact-section .input-error {
+  border-color: #f27735;
+}
+
+.contact-section button {
+  background: #f27735;
+  color: #fff;
   cursor: pointer;
 }
 
-form .error {
-  border-color: red;
-}
-
-/* Message Styling */
-.message {
+.contact-section .message {
   margin-top: 10px;
 }
 
-.success {
-  color: #28a745;
+.contact-section .success {
+  color: #43a047;
 }
 
-.error {
+.contact-section .error {
   color: #dc3545;
 }
 
-.day-mode .contact {
+.day-mode .contact-section {
   background-color: #f8f9fa;
   color: #2d2d2d;
 }
 
-.night-mode .contact {
+.night-mode .contact-section {
   background-color: #2d2d2d;
   color: #f8f9fa;
 }
