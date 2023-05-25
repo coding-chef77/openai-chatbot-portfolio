@@ -1,3 +1,14 @@
-.footer {
-  background-color: bisque;
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.day-mode footer {
+  border-top: 2px solid #ffab70;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.night-mode footer {
+  border-top: 2px solid #f27735;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }

@@ -3,18 +3,20 @@ import "./Layout.css";
 import Navbar from "../Navbar/Navbar";
 import About from "../About/About";
 import Footer from "../Footer/Footer";
-import Card from "../Card/Card";
 import Chatbot from "../Chatbot/Chatbot";
 import Message from "../Message/Message";
+import Contact from "../Contact/Contact";
+import Card1 from "../Cards/Card1/Card1";
 
-function Layout() {
+function Layout({ switchMode, isDayMode }) {
   return (
     <>
-      <Navbar />
+      <Navbar switchMode={switchMode} isDayMode={isDayMode} />
       <About />
       <Chatbot />
       <Message />
-      <Card />
+      <Card1 />
+      <Contact />
       <Footer />
     </>
   );

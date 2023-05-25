@@ -1,0 +1,54 @@
+.card-container {
+  margin: 2em 0;
+  position: relative;
+  max-width: 450px;
+}
+
+.card {
+  min-width: 250px;
+  /* background-color: #363636;
+  border: 2px solid #f27735; */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin: 1em 0;
+  color: #f27735;
+  text-align: center;
+}
+
+.card-subheader {
+  text-decoration: none;
+  color: #ddeeff;
+  display: block;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.card-content {
+  margin: 0 1em 1em;
+  color: #fff;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.github-link {
+  color: #f27735;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #ffab70;
+}

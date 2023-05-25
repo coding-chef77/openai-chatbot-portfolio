@@ -14,7 +14,7 @@ function About() {
   ];
   const projectManagementTools = ["Trello", "Gantt"];
   return (
-    <section id="about">
+    <section className="about section-card">
       <h2>Litt om meg</h2>
       <p>
         Hei, jeg heter Heine Günther. Etter en variert karriere innen mat og
@@ -34,10 +34,13 @@ function About() {
         Sjekk ut noen av prosjektene mine og ta kontakt i kontaktskjemaet
         nedenfor. Jeg ser fra til å høre fra deg!.
       </p>
-      <h4>ferdigheter</h4>
-      <p>{skillsets.join(", ")}</p>
-      <h4>Verktøy for prosjektstyring</h4>
-      <p> {projectManagementTools.join(", ")}</p>
+      <h4>ferdigheter:</h4>
+      <p className="skillsets">{skillsets.join(", ")}</p>
+      <h4>Verktøy for prosjektstyring:</h4>
+      <p className="projectManagementTools">
+        {" "}
+        {projectManagementTools.join(", ")}
+      </p>
     </section>
   );
 }
